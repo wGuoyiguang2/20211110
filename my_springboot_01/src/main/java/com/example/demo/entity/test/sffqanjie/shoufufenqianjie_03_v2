@@ -1,0 +1,162 @@
+{
+	"ProjGUID": "2171333D-5305-4901-8D06-85B8A48EB060",
+	"ContractGUID": "C4278725-3013-EA11-80D0-0050568B0467",
+	"Data": {
+		"ProjGUID": "2171333D-5305-4901-8D06-85B8A48EB060",
+		"ContractGUID": "C4278725-3013-EA11-80D0-0050568B0467",
+		"PaymentMethod": "2019年11月高层首付分期",
+		"MortgageBank": "中国银行武汉经济开发区支行",
+		"DownPaymentRatio": 45.15,  //
+		"DownPaymentAmount": 1317078,  //
+		"Payables": [    //
+			{
+				"PayablesAmount": 50000,
+				"PayablesDate": "2019-11-28T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 202633,
+				"PayablesDate": "2019-11-30T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期1",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 160000,
+				"PayablesDate": "2019-12-22T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期3",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 513695,
+				"PayablesDate": "2020-02-25T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期2",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 390750,
+				"PayablesDate": "2020-02-27T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "装修款",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 1600000,
+				"PayablesDate": "2020-05-24T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "银行按揭",
+				"YJJKSJ": null
+			}
+		],
+		"RecordName": "龙湖·春江彼岸",
+		"ProductMarketingTypes": "住宅-超高层",
+		"CustomerAddress": null,
+		"EarnestMoney": 50000,
+		"RoomNumber": "春江彼岸项目-一期-春江彼岸-1组团-4号楼-0-WHCJBA-1-4-3001",
+		"PaymentKind": "首付分期按揭付款",
+		"MortgageAmount": 1600000,  //
+		"ProvidentFundAmount": 0,
+		"PoolArea": 37.4,  //
+		"ContractDeliveryTime": "2021-12-31T00:00:00+08:00",
+		"ContractTotalPrice": 2917078,
+		"ContractTotalPriceNoTaxes": 2676218.35,
+		"OutsideTransactionUnitPrice": 22395.99,
+		"OutsideTransactionTotalPrice": 2917078, //
+		"OutsideArea": 130.25,
+		"CustomerName": "胡庆",
+		"CustomerNumber": "18956960401",
+		"StandbyNumber": "",
+		"Buyers": [
+			{
+				"BuyerName": "胡庆",
+				"BuyerNumber": "18956960401",
+				"BuyerIdType": "身份证",
+				"BuyerId": "340825199602143819",
+				"BuyerAdress": "武汉地质大学",
+				"BuyerRatio": 100,
+				"BuyerSex": "男",
+				"BuyerBirthday": "1996-02-14T00:00:00+08:00",
+				"PrimaryContact": "是"
+			}
+		],
+		"Taxes": 240859.65,  //
+		"TaxRate": 9,
+		"InsideArea": 92.85,  //
+		"PostalAddress": "武汉市洪山区中国地质大学",
+		"ProjectAddress": "汉阳区杨泗港地区新港长江城启动片J、K地块",
+		"ProjectCompanyName": "武汉安和盛泰房地产开发有限公司",
+		"PresaleLicenseNumber": "武房开预售[2019]954号",
+		"DocumentNo": "340825199602143819",
+		"DocumentType": "身份证",
+		"InsideTransactionUnitPrice": 31417.1,
+		"InsideTransactionTotalPrice": 2917078,
+		"ValuationMethod": "按建筑面积",
+		"RoomStructure": "三室二厅一厨二卫",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2019-11-30T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "201911281048",
+		"Apartment": "130",  //
+		"Scenery": null,
+		"Orientation": null,
+		"CustomerGender": "男",
+		"BasementArea": 0,
+		"BasementLightingWellDirection": null,
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": 0,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": 0,
+		"QYSJ": "2019-11-30T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 2917078, //
+		"MPHYT": "洲头街鹦鹉大道与两湖路交汇处",  //
+		"FQFK": null,
+		"SFFQFK": [  //
+			{
+				"SFFQQC": 1,
+				"SFFQQX": "2019-11-30T00:00:00+08:00",
+				"SFFQJE": 252633,
+				"YJJKSJ": null
+			},
+			{
+				"SFFQQC": 2,
+				"SFFQQX": "2019-12-22T00:00:00+08:00",
+				"SFFQJE": 160000,
+				"YJJKSJ": null
+			},
+			{
+				"SFFQQC": 3,
+				"SFFQQX": "2020-02-25T00:00:00+08:00",
+				"SFFQJE": 513695,
+				"YJJKSJ": null
+			}
+		],
+		"DKXX": "商业贷款",
+		"NetContractNumber": "201911281048",
+		"ZXPaymentMethod": "装修0首付贷款",
+		"AJZXKJE": "0.00",
+		"ZXKSQJE": "390750.0000",  //
+		"ZXDJ": "3000.00",  //
+		"CG": "0.0000",
+		"ZXDownPaymentRatio": "0.00%",
+		"ZXFQFK": null,
+		"ZXSFFQFK": null,
+		"ZHTDJ": "19395.9900", //
+		"ZHTZJ": "2526328.0000",  //
+		"TDSYNX": "0",
+		"DSCS": "57",  //
+		"DXCS": "0",
+		"ZK": "100.00%",  //
+		"BZZJ": "2917078.00",  //
+		"SCOutsideArea": 0
+	}
+}

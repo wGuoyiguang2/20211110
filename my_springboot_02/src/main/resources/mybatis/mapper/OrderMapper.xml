@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.OrderMapper" >
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Order">
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="description" property="description" jdbcType="VARCHAR" />
+        <result column="createdGUID" property="createdGUID" jdbcType="VARCHAR" />
+        <result column="updatedGUID" property="updatedGUID" jdbcType="VARCHAR" />
+        <result column="createdTime" property="createdTime" jdbcType="TIMESTAMP" />
+        <result column="updatedTime" property="updatedTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <insert id="insert" parameterType="com.example.demo.entity.Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        s_order
+        (
+        name,
+        description
+        ,createdGUID,
+        updatedGUID,
+        createdTime,
+        updatedTime
+        )
+         VALUES
+         (
+         #{name},
+         #{description},
+         #{createdGUID},
+         #{updatedGUID},
+         #{createdTime},
+          #{updatedTime}
+         )
+    </insert>
+
+    <update id="updateBatchOrders" parameterType="list">
+        update s_order
+        <trim prefix="set" suffixOverrides=",">
+            <foreach collection="list" item="item">
+                name = case when id = #{item.id} then #{item.name} else name END,
+                description = CASE WHEN id = #{item.id} THEN #{item.description} else description END,
+                <!--因为是 批量修改，所以下面两个字段不维护-->
+                <!-- createdGUID = CASE WHEN id = #{item.id} THEN #{createdGUID} else createdGUID END,
+                 createdTime = CASE WHEN id = #{item.id} THEN #{createdTime} else createdTime END,-->
+
+                 updatedGUID = CASE WHEN id = #{item.id} THEN #{item.updatedGUID} else updatedGUID END,
+                 updatedTime = CASE WHEN id = #{item.id} THEN #{item.updatedTime} else updatedTime END,
+               </foreach>
+         </trim>
+         where id in
+         <foreach collection="list" item="item" separator="," open="(" close=")">
+             #{item.id}
+         </foreach>
+     </update>
+ </mapper>

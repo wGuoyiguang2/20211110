@@ -1,0 +1,91 @@
+{
+    "ContractGUID": "11B67964-8C28-EA11-80D1-0050568D6591",
+    "ProjGUID": "73EE6089-C92C-39D2-E053-7A60A8C0B750",
+    "Data": {
+        "aJZXKJE": "0.00",
+        "apartment": "A2户型",
+        "buyers": [
+            {
+                "buyerAdress": "北京市朝阳区垂杨柳小区",
+                "buyerId": "370686199109190045",
+                "buyerIdType": "身份证",
+                "buyerName": "张璞",
+                "buyerNumber": "15295010703",
+                "buyerRatio": "100.0000"
+            }
+        ],
+        "cG": "2.9000",
+        "contractDeliveryTime": "2021-06-30T00:00:00",
+        "contractGUID": "11B67964-8C28-EA11-80D1-0050568D6591",
+        "contractTotalPrice": 2441723,
+        "contractTotalPriceNoTaxes": 2240112.84,
+        "customerAddress": "北京市朝阳区垂杨柳小区",
+        "customerGender": "男",
+        "customerName": "张璞",
+        "customerNumber": "15295010703",
+        "dKXX": "商业贷款",
+        "decorationTotalPrice": 0,
+        "documentNo": "370686199109190045",
+        "documentType": "身份证",
+        "downPaymentAmount": 741723,
+        "downPaymentRatio": 30.38,
+        "earnestMoney": 50000,
+        "fJZJ": 2516465,
+        "insideArea": 73.27,
+        "insideTransactionTotalPrice": 2441723,
+        "insideTransactionUnitPrice": 33325,
+        "mPHYT": "浦口区颐辉花苑2幢301室",
+        "mortgageAmount": 1700000,
+        "mortgageBank": "中国银行下关支行",
+        "netContractNumber": "2019306637",
+        "outsideArea": 88.53,
+        "outsideTransactionTotalPrice": 2441723,
+        "outsideTransactionUnitPrice": 27580.74,
+        "payables": [
+            {
+                "payablesAmount": 50000,
+                "payablesDate": "2019-12-27T00:00:00+08:00",
+                "payablesKind": "非贷款类房款",
+                "payablesName": "定金"
+            },
+            {
+                "payablesAmount": 691723,
+                "payablesDate": "2019-12-27T00:00:00+08:00",
+                "payablesKind": "非贷款类房款",
+                "payablesName": "工抵房房款"
+            },
+            {
+                "payablesAmount": 1700000,
+                "payablesDate": "2020-03-25T00:00:00+08:00",
+                "payablesKind": "贷款类房款",
+                "payablesName": "银行按揭"
+            }
+        ],
+        "paymentKind": "按揭付款",
+        "paymentMethod": "按揭付款（中介工抵）",
+        "poolArea": 15.26,
+        "postalAddress": "北京市朝阳区垂杨柳小区",
+        "presaleLicenseNumber": "2019300052",
+        "productMarketingTypes": "住宅-小高层",
+        "projGUID": "73EE6089-C92C-39D2-E053-7A60A8C0B750",
+        "projectAddress": "浦口区荣庄路和海桥路交叉口",
+        "projectCompanyName": "南京市颐辉置业有限公司",
+        "providentFundAmount": 0,
+        "qYSJ": "2019-12-27T00:00:00+08:00",
+        "recordName": "颐辉花苑",
+        "roomNumber": "海桥路颐和九里项目-一期-颐和九里-1组团-2幢-1单元-301",
+        "roomStructure": "3室2厅1厨1卫",
+        "standbyNumber": "",
+        "subscriptionAgreementNumber": "2019306637",
+        "subscriptionDate": "2019-12-27T00:00:00+08:00",
+        "taxRate": 9,
+        "taxes": 201610.16,
+        "valuationMethod": "按建筑面积",
+        "zHTDJ": "0.0000",
+        "zHTZJ": "0.0000",
+        "zXDJ": "0.00",
+        "zXKSQJE": "0",
+        "zXPaymentMethod": "",
+        "zXZJ": 0
+    }
+}

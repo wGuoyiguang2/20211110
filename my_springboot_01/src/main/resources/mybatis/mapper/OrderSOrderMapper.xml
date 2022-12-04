@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.OrderSOrderMapper">
+  <!-- 开启 这个 namespace  的 二级缓存 -->
+  <cache/>
+
+
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.SOrder" >
+
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="description" property="description" jdbcType="VARCHAR" />
+    <result column="created_GUID" property="createdGuid" jdbcType="VARCHAR" />
+    <result column="updated_GUID" property="updatedGuid" jdbcType="VARCHAR" />
+    <result column="created_Time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="updated_Time" property="updatedTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, name, description, created_GUID, updated_GUID, created_Time, updated_Time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    *
+    from s_order
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from s_order
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.example.demo.entity.SOrder" useGeneratedKeys="true" keyProperty="id" >
+    insert into s_order (Remark, createdGUID, createdTime
+      )
+    values (#{name,jdbcType=VARCHAR},  #{createdGuid,jdbcType=VARCHAR},
+      #{createdTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.demo.entity.SOrder" useGeneratedKeys="true" keyProperty="id" >
+    insert into s_order
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="description != null" >
+        description,
+      </if>
+      <if test="createdGuid != null" >
+        created_GUID,
+      </if>
+      <if test="updatedGuid != null" >
+        updated_GUID,
+      </if>
+      <if test="createdTime != null" >
+        created_Time,
+      </if>
+      <if test="updatedTime != null" >
+        updated_Time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createdGuid != null" >
+        #{createdGuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedGuid != null" >
+        #{updatedGuid,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null" >
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByExampleSelective" >
+
+    update s_order
+    <set >
+      <if test="id != null" >
+        id = #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null" >
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="createdGuid != null" >
+        created_GUID = #{createdGuid,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedGuid != null" >
+        updated_GUID = #{updatedGuid,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null" >
+        created_Time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedTime != null" >
+        updated_Time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+
+    </if>
+  </update>
+  
+  <update id="updateByPrimaryKey" parameterType="com.example.demo.entity.SOrder" >
+    update s_order
+    set name = #{name,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

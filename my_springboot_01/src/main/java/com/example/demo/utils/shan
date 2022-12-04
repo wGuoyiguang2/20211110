@@ -1,0 +1,46 @@
+
+
+
+
+refundPrintBackCover.setExpenseSubject() ;
+
+
+refundPrintBackCover.setReimbursementNo() ;
+
+refundPrintBackCover.setRefundApplyTime()  ;
+
+
+
+refundPrintBackCover.setNcBuName() ;
+
+
+refundPrintBackCover.setKzName() ;
+
+
+refundPrintBackCover.setCstTkyh();
+
+
+refundPrintBackCover.setYhNumber() ;
+
+
+refundPrintBackCover.setPayType() ;
+
+
+refundPrintBackCover.setAmount() ;
+
+
+refundPrintBackCover.setAmountStr() ;
+
+
+
+refundPrintBackCover.setPlatform()  ;
+
+
+
+refundPrintBackCover.setRefundApply() ;
+refundPrintBackCover.setPrintDate() ;
+
+
+
+
+}

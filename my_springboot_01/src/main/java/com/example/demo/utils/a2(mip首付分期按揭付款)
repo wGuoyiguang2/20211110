@@ -1,0 +1,126 @@
+{
+	"ProjGUID": "66BCA00B-EACC-5E62-E053-7A60A8C0FF18",
+	"ContractGUID": "002E7CDA-2A6B-E911-80D1-0050568D5CE1",
+	"Data": {
+		"ProjGUID": "66BCA00B-EACC-5E62-E053-7A60A8C0FF18",
+		"ContractGUID": "002E7CDA-2A6B-E911-80D1-0050568D5CE1",
+		"PaymentMethod": "首付分期付款方式天宸原著4-6月份",
+		"MortgageBank": "中信银行",
+		"DownPaymentRatio": 30.22,
+		"DownPaymentAmount": 770796,
+		"Payables": [
+			{
+				"PayablesAmount": 100000,
+				"PayablesDate": "2019-04-22T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金"
+			},
+			{
+				"PayablesAmount": 155080,
+				"PayablesDate": "2019-04-30T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期1"
+			},
+			{
+				"PayablesAmount": 80,
+				"PayablesDate": "2019-04-30T00:00:00+08:00",
+				"PayablesKind": "代收费用",
+				"PayablesName": "产权登记费"
+			},
+			{
+				"PayablesAmount": 8166,
+				"PayablesDate": "2019-04-30T00:00:00+08:00",
+				"PayablesKind": "代收费用",
+				"PayablesName": "维修基金"
+			},
+			{
+				"PayablesAmount": 515716,
+				"PayablesDate": "2019-08-30T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期2"
+			},
+			{
+				"PayablesAmount": 1780000,
+				"PayablesDate": "2019-11-27T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "银行按揭"
+			}
+		],
+		"RecordName": "龙祥嘉苑",
+		"ProductMarketingTypes": "住宅-叠拼别墅",
+		"CustomerAddress": null,
+		"EarnestMoney": 100000,
+		"RoomNumber": "龙祥嘉苑天宸原著项目-一期-天宸原著-12栋-1-ZZTCYZ-01-12-1-502",
+		"PaymentKind": "首付分期按揭付款",
+		"MortgageAmount": 1780000,
+		"ProvidentFundAmount": 0,
+		"PoolArea": 37.21,
+		"ContractDeliveryTime": "2020-12-30T00:00:00+08:00",
+		"ContractTotalPrice": 2550796,
+		"ContractTotalPriceNoTaxes": 2340179.82,
+		"OutsideTransactionUnitPrice": 20302.42,
+		"OutsideTransactionTotalPrice": 2550796,
+		"OutsideArea": 125.64,
+		"CustomerName": "冀相钱",
+		"CustomerNumber": "18337121087",
+		"Buyers": [
+			{
+				"BuyerName": "冀相钱",
+				"BuyerNumber": "18337121087",
+				"BuyerIdType": "身份证",
+				"BuyerId": "41108219970226723X",
+				"BuyerAdress": "河南省郑州市管城区金色港湾"
+			}
+		],
+		"Taxes": 210616.18,
+		"TaxRate": 9,
+		"InsideArea": 88.43,
+		"PostalAddress": "河南省郑州市管城区金色港湾",
+		"ProjectAddress": "新郑市龙湖镇河南正商佳居置业有限公司南侧、规划三路西侧",
+		"ProjectCompanyName": "郑州龙祥房地产开发有限公司",
+		"PresaleLicenseNumber": null,
+		"DocumentNo": "41108219970226723X",
+		"DocumentType": "身份证",
+		"InsideTransactionUnitPrice": 28845.37,
+		"InsideTransactionTotalPrice": 2550796.0691,
+		"ValuationMethod": "按建筑面积",
+		"RoomStructure": "下叠",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2019-04-30T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "201904220035",
+		"Apartment": "上叠",
+		"Scenery": null,
+		"Orientation": null,
+		"CustomerGender": "男",
+		"BasementArea": 0,
+		"BasementLightingWellDirection": null,
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": 0,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": 0,
+		"QYSJ": "2019-04-30T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 2655702,
+		"MPHYT": null,
+		"FQFK": null,
+		"SFFQFK": [
+			{
+				"SFFQQC": 1,
+				"SFFQQX": "2019-04-30T00:00:00+08:00",
+				"SFFQJE": 255080
+			},
+			{
+				"SFFQQC": 2,
+				"SFFQQX": "2019-08-30T00:00:00+08:00",
+				"SFFQJE": 515716
+			}
+		],
+		"DKXX": "商业贷款"
+	}
+}

@@ -1,0 +1,132 @@
+{
+	"ProjGUID": "066384A6-4167-4A37-B8B0-B85F0B101A4E",
+	"ContractGUID": "534B3AD5-D52A-EA11-80D5-0050568BDF21",
+	"Data": {
+		"ProjGUID": "066384A6-4167-4A37-B8B0-B85F0B101A4E",
+		"ContractGUID": "534B3AD5-D52A-EA11-80D5-0050568BDF21",
+		"PaymentMethod": "一次性付款",
+		"MortgageBank": null,
+		"DownPaymentRatio": 100,  //
+		"DownPaymentAmount": 1038483,  //
+		"Payables": [  //
+			{
+				"PayablesAmount": 50000,
+				"PayablesDate": "2019-12-30T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 53848,
+				"PayablesDate": "2019-12-30T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款1",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 424635,
+				"PayablesDate": "2020-02-20T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款2",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 510000,
+				"PayablesDate": "2020-03-02T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款3",
+				"YJJKSJ": null
+			}
+		],
+		"RecordName": "葛洲坝·龙湖江宸",
+		"ProductMarketingTypes": "类住宅-SOHO",
+		"CustomerAddress": null,
+		"EarnestMoney": 50000,
+		"RoomNumber": "青年路项目-一期-葛洲坝·龙湖江宸-2-1233",
+		"PaymentKind": "一次性付款",
+		"MortgageAmount": 0,
+		"ProvidentFundAmount": 0,
+		"PoolArea": 17.9,
+		"ContractDeliveryTime": "2021-06-30T00:00:00+08:00",
+		"ContractTotalPrice": 1038483,  //
+		"ContractTotalPriceNoTaxes": 952736.7,  //
+		"OutsideTransactionUnitPrice": 20617.09,  //
+		"OutsideTransactionTotalPrice": 1038483,  //
+		"OutsideArea": 50.37, //
+		"CustomerName": "中国民用航空中南地区空中交通管理局湖北分局",
+		"CustomerNumber": "18607732201",
+		"StandbyNumber": "02763378818",
+		"Buyers": [  //
+			{
+				"BuyerName": "中国民用航空中南地区空中交通管理局湖北分局",
+				"BuyerNumber": "18607732201",
+				"BuyerIdType": "营业执照",
+				"BuyerId": "121000007327321517",
+				"BuyerAdress": "湖北省武汉市黄陂区天河国际机场",
+				"BuyerRatio": 100,
+				"BuyerSex": "男",
+				"BuyerBirthday": null,
+				"PrimaryContact": "是"
+			}
+		],
+		"Taxes": 85746.3,  //
+		"TaxRate": 9,  //
+		"InsideArea": 32.47,  //
+		"PostalAddress": "湖北省武汉市黄陂区天河国际机场",
+		"ProjectAddress": "江汉区航侧村青年路与马场角小路交汇处",
+		"ProjectCompanyName": "武汉葛洲坝龙湖房地产开发有限公司",
+		"PresaleLicenseNumber": "武房开预售[2019]521号",
+		"DocumentNo": "121000007327321517",
+		"DocumentType": "营业执照",
+		"InsideTransactionUnitPrice": 31982.85, //
+		"InsideTransactionTotalPrice": 1038483, //
+		"ValuationMethod": "按建筑面积",
+		"RoomStructure": "1室",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2019-12-30T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "201912300307", //
+		"Apartment": "公寓",
+		"Scenery": null,
+		"Orientation": null,
+		"CustomerGender": "",
+		"BasementArea": null,
+		"BasementLightingWellDirection": null,
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": null,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": null,
+		"QYSJ": "2019-12-30T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 1160472,
+		"MPHYT": "",
+		"FQFK": null,
+		"SFFQFK": null,
+		"DKXX": "无贷款",
+		"NetContractNumber": "201912300307", //
+		"ZXPaymentMethod": "",
+		"AJZXKJE": "0.00",
+		"ZXKSQJE": "0.00",
+		"ZXDJ": "0.00",
+		"CG": null,
+		"ZXDownPaymentRatio": null,
+		"ZXFQFK": null,
+		"ZXSFFQFK": null,
+		"ZHTDJ": "0.0000",
+		"ZHTZJ": "0.0000",
+		"TDSYNX": "0",
+		"DSCS": "35", //
+		"DXCS": "4",  //
+		"ZK": "89.49%", //
+		"BZZJ": "1160472.00", //
+		"SCOutsideArea": 0,
+		"SCInsideArea": 0,
+		"SCPoolArea": 0,
+		"HZZJ": 1038483
+	}
+}

@@ -1,0 +1,131 @@
+{
+	"ProjGUID": "66BCA00B-EACC-5E62-E053-7A60A8C0FF18",
+	"ContractGUID": "9F12C115-D37E-E911-80D1-0050568D5CE1",
+	"Data": {
+		"ProjGUID": "66BCA00B-EACC-5E62-E053-7A60A8C0FF18",
+		"ContractGUID": "9F12C115-D37E-E911-80D1-0050568D5CE1",
+		"PaymentMethod": "全款分期天宸原著4-6月份",
+		"MortgageBank": null,
+		"DownPaymentRatio": 20,
+		"DownPaymentAmount": 231808,
+		"Payables": [
+			{
+				"PayablesAmount": 50000,
+				"PayablesDate": "2019-05-22T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金"
+			},
+			{
+				"PayablesAmount": 181808,
+				"PayablesDate": "2019-05-25T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款1"
+			},
+			{
+				"PayablesAmount": 80,
+				"PayablesDate": "2019-05-25T00:00:00+08:00",
+				"PayablesKind": "代收费用",
+				"PayablesName": "产权登记费"
+			},
+			{
+				"PayablesAmount": 6516,
+				"PayablesDate": "2019-05-25T00:00:00+08:00",
+				"PayablesKind": "代收费用",
+				"PayablesName": "维修基金"
+			},
+			{
+				"PayablesAmount": 463616,
+				"PayablesDate": "2019-07-25T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款2"
+			},
+			{
+				"PayablesAmount": 463617,
+				"PayablesDate": "2019-10-25T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "楼款3"
+			}
+		],
+		"RecordName": "龙祥嘉苑",
+		"ProductMarketingTypes": "住宅-高层",
+		"CustomerAddress": null,
+		"EarnestMoney": 50000,
+		"RoomNumber": "龙祥嘉苑天宸原著项目-一期-天宸原著-15栋-1-ZZTCYZ-1-15-1-802",
+		"PaymentKind": "分期付款",
+		"MortgageAmount": 0,
+		"ProvidentFundAmount": 0,
+		"PoolArea": 25.05,
+		"ContractDeliveryTime": "2021-04-30T00:00:00+08:00",
+		"ContractTotalPrice": 1159041,
+		"ContractTotalPriceNoTaxes": 1063340.37,
+		"OutsideTransactionUnitPrice": 11561.51,
+		"OutsideTransactionTotalPrice": 1159041,
+		"OutsideArea": 100.25,
+		"CustomerName": "丁天才",
+		"CustomerNumber": "17600730118",
+		"Buyers": [
+			{
+				"BuyerName": "丁天才",
+				"BuyerNumber": "17600730118",
+				"BuyerIdType": "身份证",
+				"BuyerId": "412825197301181513",
+				"BuyerAdress": "河南省上蔡县邵店乡丁楼村丁楼16597号"
+			}
+		],
+		"Taxes": 95700.63,
+		"TaxRate": 9,
+		"InsideArea": 75.2,
+		"PostalAddress": "河南省上蔡县邵店乡丁楼村丁楼16597号",
+		"ProjectAddress": "新郑市龙湖镇河南正商佳居置业有限公司南侧、规划三路西侧",
+		"ProjectCompanyName": "郑州龙祥房地产开发有限公司",
+		"PresaleLicenseNumber": null,
+		"DocumentNo": "412825197301181513",
+		"DocumentType": "身份证",
+		"InsideTransactionUnitPrice": 15412.78,
+		"InsideTransactionTotalPrice": 1159041.056,
+		"ValuationMethod": "按建筑面积",
+		"RoomStructure": "两房两厅两卫",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2019-05-25T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "201905220136",
+		"Apartment": "高层A",
+		"Scenery": null,
+		"Orientation": null,
+		"CustomerGender": "男",
+		"BasementArea": 0,
+		"BasementLightingWellDirection": null,
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": 0,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": 0,
+		"QYSJ": "2019-05-25T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 1206708,
+		"MPHYT": null,
+		"FQFK": [
+			{
+				"FQQC": 1,
+				"FQQX": "2019-05-25T00:00:00+08:00",
+				"FQJE": 231808
+			},
+			{
+				"FQQC": 2,
+				"FQQX": "2019-07-25T00:00:00+08:00",
+				"FQJE": 463616
+			},
+			{
+				"FQQC": 3,
+				"FQQX": "2019-10-25T00:00:00+08:00",
+				"FQJE": 463617
+			}
+		],
+		"SFFQFK": null,
+		"DKXX": "无贷款"
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.CommodityOrderDetailMapper" >
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.CommodityOrderDetail">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="order_id" property="orderId" jdbcType="INTEGER" />
+        <result column="commodity_name" property="commodityName" jdbcType="VARCHAR" />
+        <result column="commodity_id" property="commodityId" jdbcType="VARCHAR" />
+        <result column="commodity_count" property="commodityCount" jdbcType="INTEGER" />
+        <result column="is_delete" property="isDelete" jdbcType="INTEGER" />
+    </resultMap>
+
+
+    <!-- 批量新增-->
+    <insert id="batchInsertDetails" parameterType="java.util.List">
+        INSERT INTO commodity_order_detail(order_id,commodity_name ,commodity_id,commodity_count,is_delete)
+        VALUES
+        <foreach collection="list" item="item" separator=",">
+            (#{item.orderId,jdbcType=VARCHAR},#{item.commodityName,jdbcType=VARCHAR},#{item.commodityId,jdbcType=VARCHAR},#{item.commodityCount,jdbcType=VARCHAR},0)
+        </foreach>
+    </insert>
+
+    <!--根据主订单id获取对应子订单信息-->
+    <select id="selectListByOrderId" resultMap="BaseResultMap">
+     select id, order_id, commodity_name, commodity_id, commodity_count, is_delete
+    from commodity_order_detail
+    where order_id = #{orderId}
+    and is_delete = 0
+    </select>
+</mapper>

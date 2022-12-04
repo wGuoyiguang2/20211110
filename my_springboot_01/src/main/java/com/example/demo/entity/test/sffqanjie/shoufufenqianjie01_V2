@@ -1,0 +1,166 @@
+{
+	"ProjGUID": "0050568D-7C0A-1ED9-A1E8-BCE305DD9CBA",
+	"ContractGUID": "9A13AD3C-A041-EA11-80D5-0050568BDF21",
+	"Data": {
+		"ProjGUID": "0050568D-7C0A-1ED9-A1E8-BCE305DD9CBA",
+		"ContractGUID": "9A13AD3C-A041-EA11-80D5-0050568BDF21",
+		"PaymentMethod": "20年1月小高层首付分期", //
+		"MortgageBank": "光大银行武汉武昌支行",  //
+		"DownPaymentRatio": 43.54,  //
+		"DownPaymentAmount": 539907, //
+		"Payables": [    //
+			{
+				"PayablesAmount": 50000,
+				"PayablesDate": "2020-01-20T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 50398,
+				"PayablesDate": "2020-01-28T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期1",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 23593,
+				"PayablesDate": "2020-01-28T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "装修款1",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 203584,
+				"PayablesDate": "2020-03-27T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期2",
+				"YJJKSJ": "2020-03-06T00:00:00+08:00"
+			},
+			{
+				"PayablesAmount": 52332,
+				"PayablesDate": "2020-03-27T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "装修款2",
+				"YJJKSJ": "2020-03-06T00:00:00+08:00"
+			},
+			{
+				"PayablesAmount": 700000,
+				"PayablesDate": "2020-06-24T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "银行按揭",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 160000,
+				"PayablesDate": "2020-06-24T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "按揭装修款",
+				"YJJKSJ": null
+			}
+		],
+		"RecordName": "经发 龙湖雲峰原著",  //
+		"ProductMarketingTypes": "住宅-小高层", //
+		"CustomerAddress": null,
+		"EarnestMoney": 50000,  //
+		"RoomNumber": "江夏齐心村雲峰原著项目-一期-经发 龙湖·雲峰原著-1组团-B17-0502", //
+		"PaymentKind": "首付分期按揭付款", //
+		"MortgageAmount": 540000,     // 按揭总金额 减去 按揭装修金额
+		"ProvidentFundAmount": 0,
+		"PoolArea": 19.17, //
+		"ContractDeliveryTime": "2022-06-30T00:00:00+08:00", //
+		"ContractTotalPrice": 1239907, //
+		"ContractTotalPriceNoTaxes": 1137529.36, //
+		"OutsideTransactionUnitPrice": 12866.11, //
+		"OutsideTransactionTotalPrice": 1239907, //
+		"OutsideArea": 96.37, //
+		"CustomerName": "裴雪峰", //
+		"CustomerNumber": "15337294296",  // ???
+		"StandbyNumber": "",
+		"Buyers": [     //
+			{
+				"BuyerName": "裴雪峰",
+				"BuyerNumber": "15337294296",
+				"BuyerIdType": "身份证",
+				"BuyerId": "421087198601266528",
+				"BuyerAdress": "武汉市江夏区纸坊街中建龙城小区17-1603",
+				"BuyerRatio": 100,
+				"BuyerSex": "女",
+				"BuyerBirthday": "1986-01-26T00:00:00+08:00",
+				"PrimaryContact": "是"
+			}
+		],
+		"Taxes": 102377.64, //
+		"TaxRate": 9,//
+		"InsideArea": 77.2, //
+		"PostalAddress": "武汉市江夏区纸坊街中建龙城小区17-1603",// ???
+		"ProjectAddress": "北华街与江花大道交汇处", //
+		"ProjectCompanyName": "武汉市鑫呈捷房地产开发有限公司", //
+		"PresaleLicenseNumber": "武房开预售[2020]043号", //
+		"DocumentNo": "421087198601266528", //
+		"DocumentType": "身份证", //
+		"InsideTransactionUnitPrice": 16060.97,
+		"InsideTransactionTotalPrice": 1239907, // ???
+		"ValuationMethod": "按建筑面积",
+		"RoomStructure": "3室2厅1厨1卫",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2020-01-28T00:00:00+08:00", //
+		"SubscriptionAgreementNumber": "202001200306", //
+		"Apartment": "97户型（高层）",  //
+		"Scenery": null,
+		"Orientation": "",
+		"CustomerGender": "女",  //
+		"BasementArea": null,
+		"BasementLightingWellDirection": "",
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": null,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": null,
+		"QYSJ": "2020-01-28T00:00:00+08:00",
+		"ZXZJ": 0,      // ????
+		"FJZJ": 1244907, //
+		"MPHYT": "",
+		"FQFK": null,
+		"SFFQFK": [
+			{
+				"SFFQQC": 1,
+				"SFFQQX": "2020-01-28T00:00:00+08:00",
+				"SFFQJE": 100398,
+				"YJJKSJ": null
+			},
+			{
+				"SFFQQC": 2,
+				"SFFQQX": "2020-03-27T00:00:00+08:00",
+				"SFFQJE": 203584,
+				"YJJKSJ": "2020-03-06T00:00:00+08:00"
+			}
+		],
+		"DKXX": "商业贷款", //
+		"NetContractNumber": "202001200306", //
+		"ZXPaymentMethod": "20年1月装修首付分期", //
+		"AJZXKJE": "160000.0000", //
+		"ZXKSQJE": "235925.0000", //
+		"ZXDJ": "2448.12", //
+		"CG": "2.9000", //
+		"ZXDownPaymentRatio": "67.82%", // ???
+		"ZXFQFK": null,
+		"ZXSFFQFK": null,
+		"ZHTDJ": "10417.9900", //
+		"ZHTZJ": "1003982.0000", //
+		"TDSYNX": "0",
+		"DSCS": "16", //
+		"DXCS": "1",  //
+		"ZK": "99.60%", //
+		"BZZJ": "1244907.00", //
+		"SCOutsideArea": 0,
+		"SCInsideArea": 0,
+		"SCPoolArea": 0,
+		"HZZJ": 1239907 //
+	}
+}

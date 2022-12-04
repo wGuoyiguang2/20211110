@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.RefundsetMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Refundset">
+        <result column="x_BUGUID" jdbcType="VARCHAR" property="xBuguid"/>
+        <result column="x_DsiableEndTime" jdbcType="TIMESTAMP" property="xDsiableendtime"/>
+        <result column="x_DsiableStartTime" jdbcType="TIMESTAMP" property="xDsiablestarttime"/>
+        <result column="x_Frequency" jdbcType="VARCHAR" property="xFrequency"/>
+        <result column="x_FrequencySet" jdbcType="VARCHAR" property="xFrequencyset"/>
+        <result column="x_IsAutoRefund" jdbcType="INTEGER" property="xIsautorefund"/>
+        <result column="x_IsDisableStart" jdbcType="INTEGER" property="xIsdisablestart"/>
+        <result column="x_IsEnableXFHS" jdbcType="INTEGER" property="xIsenablexfhs"/>
+        <result column="x_ProjGUID" jdbcType="VARCHAR" property="xProjguid"/>
+        <result column="x_SendTime" jdbcType="TIMESTAMP" property="xSendtime"/>
+        <result column="CreatedGUID" jdbcType="VARCHAR" property="createdguid"/>
+        <result column="CreatedName" jdbcType="VARCHAR" property="createdname"/>
+        <result column="CreatedTime" jdbcType="TIMESTAMP" property="createdtime"/>
+        <result column="ModifiedGUID" jdbcType="VARCHAR" property="modifiedguid"/>
+        <result column="ModifiedName" jdbcType="VARCHAR" property="modifiedname"/>
+        <result column="ModifiedTime" jdbcType="TIMESTAMP" property="modifiedtime"/>
+        <result column="RefundSetGUID" jdbcType="VARCHAR" property="refundsetguid"/>
+        <result column="VersionNumber" jdbcType="BIGINT" property="versionnumber"/>
+        <result column="is_testdata" jdbcType="INTEGER" property="isTestdata"/>
+        <result column="is_deleted" jdbcType="INTEGER" property="isDeleted"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id
+        ,
+        x_BUGUID, x_DsiableEndTime, x_DsiableStartTime, x_Frequency, x_FrequencySet, x_IsAutoRefund, x_IsDisableStart, x_IsEnableXFHS, x_ProjGUID, x_SendTime, CreatedGUID, CreatedName, CreatedTime, ModifiedGUID, ModifiedName, ModifiedTime, RefundSetGUID, VersionNumber, is_testdata, is_deleted
+    </sql>
+
+
+
+
+    <select id="getRefundByBuGuid" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from x_s_refundset where x_BUGUID = #{buGuid}
+        and is_deleted = 0
+    </select>
+
+
+    <select id="getRefundSetList" resultMap="BaseResultMap">
+        select refund_set.x_Frequency, x_FrequencySet,x_ProjGUID
+        from refund_set
+        where is_deleted = 0
+
+
+        <!-- 这个是正确条件，为了测试 将条件改成错误的  启用截止日期 大于等于 当前日期-->
+        <!-- and datediff(x_DsiableEndTime,now()) >=0-->
+
+        <!--    错误的筛选条件 -->
+        and 0 > datediff(x_DsiableEndTime, now())
+        and x_IsEnableXFHS = 1
+        and x_IsAutoRefund = 1
+        and x_Frequency is not null and x_Frequency != ''
+        and x_FrequencySet is not null and x_FrequencySet  != ''
+
+    </select>
+
+
+
+
+
+
+
+
+
+</mapper>

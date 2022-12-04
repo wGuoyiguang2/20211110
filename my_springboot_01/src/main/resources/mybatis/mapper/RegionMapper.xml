@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.RegionMapper" >
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Region">
+        <result column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="code" property="code" jdbcType="VARCHAR" />
+        <result column="parent_code" property="parentCode" jdbcType="VARCHAR"/>
+        <result column="level" property="level" jdbcType="INTEGER"/>
+    </resultMap>
+    <select id="list" resultMap="BaseResultMap">
+     select id, name ,code ,parent_code ,level from sys_region
+    </select>
+
+    <select id="getRegionByCode" resultMap="BaseResultMap">
+     select id, name ,code ,parent_code ,level from sys_region where  code = #{code}
+    </select>
+
+
+</mapper>

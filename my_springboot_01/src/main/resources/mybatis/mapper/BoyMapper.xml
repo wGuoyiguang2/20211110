@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.BoyMapper" >
+    <resultMap id="BaseResultMap" type="com.example.demo.entity.Boy">
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="sex2" property="sex2" jdbcType="VARCHAR" />
+        <result column="createdTimeStr" property="createdTimeStr" jdbcType="VARCHAR" />
+        <result column="chaodai" property="chaodai" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id ='getList' resultMap="BaseResultMap">
+      select if(
+               enum = 1, case sex when '男' then 'man' end,
+               if(enum = 2, case sex when    '男' then 'man'  else 'woman' end,'')) as sex2,
+       boys.name as  name
+     from boys
+
+    </select>
+
+
+
+
+    <insert id="insert" parameterType="com.example.demo.entity.Boy"  >
+        INSERT INTO
+        boys
+        (
+        name
+        )
+         VALUES
+         (
+         #{name}
+         )
+    </insert>
+
+    <select id ='getList2' resultMap="BaseResultMap">
+        select boys.name,
+        if(
+        enum = 1, case sex when '男' then 'man' end,
+        if(enum = 2, case sex when '男' then 'man' else 'woman' end, '')) as sex2,
+        created_time                                                             as createdTime,
+        date_format(created_time, '%Y-%m-%d')                                    as createdTimeStr,
+        if(
+        DATEDIFF(created_time, '1900-01-01') > 0 and
+        DATEDIFF(created_time, '2021-05-22') &lt;= 0, '现代人',
+        case
+        when DATEDIFF(created_time, '2021-05-22') > 0 then '未来人'
+        when DATEDIFF(created_time, '1900-01-01') &lt; 0 then '古代人'
+        else '未知' end)                                           as chaodai
+        from boys
+
+
+    </select>
+
+
+
+
+
+ </mapper>

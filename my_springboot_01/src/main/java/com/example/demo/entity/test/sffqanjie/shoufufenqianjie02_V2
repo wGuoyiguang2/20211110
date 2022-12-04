@@ -1,0 +1,145 @@
+{
+	"ProjGUID": "642408D8-DA73-42F3-E053-7A60A8C07577",
+	"ContractGUID": "E16468DB-EC34-EA11-80D5-0050568B9D7E",
+	"Data": {
+		"ProjGUID": "642408D8-DA73-42F3-E053-7A60A8C07577",
+		"ContractGUID": "E16468DB-EC34-EA11-80D5-0050568B9D7E",
+		"PaymentMethod": "首付分期【别墅】",
+		"MortgageBank": "汇丰银行",
+		"DownPaymentRatio": 50.05, //
+		"DownPaymentAmount": 2705000, //
+		"Payables": [   //
+			{
+				"PayablesAmount": 300000,
+				"PayablesDate": "2020-01-02T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 240500,
+				"PayablesDate": "2020-01-12T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期1",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 2164500,
+				"PayablesDate": "2020-03-12T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "首期2",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 2700000,
+				"PayablesDate": "2020-06-09T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "银行按揭",
+				"YJJKSJ": null
+			}
+		],
+		"RecordName": "外塘路9号",  //
+		"ProductMarketingTypes": "住宅-联排别墅",  //
+		"CustomerAddress": null,
+		"EarnestMoney": 300000,
+		"RoomNumber": "外塘路东项目-一期-1组团-7-103",
+		"PaymentKind": "首付分期按揭付款",
+		"MortgageAmount": 2700000,
+		"ProvidentFundAmount": 0,
+		"PoolArea": 13.73,  //
+		"ContractDeliveryTime": "2020-07-31T00:00:00+08:00",
+		"ContractTotalPrice": 5405000, //
+		"ContractTotalPriceNoTaxes": 4958715.6, //
+		"OutsideTransactionUnitPrice": 20420.11,  //
+		"OutsideTransactionTotalPrice": 5405000,  //
+		"OutsideArea": 264.69, //
+		"CustomerName": "黄雅轩",
+		"CustomerNumber": "13584810577",
+		"StandbyNumber": "",
+		"Buyers": [  //
+			{
+				"BuyerName": "黄雅轩",
+				"BuyerNumber": "13584810577",
+				"BuyerIdType": "身份证",
+				"BuyerId": "422130198012184514",
+				"BuyerAdress": "苏州相城区望亭镇宅基浜路2号",
+				"BuyerRatio": 100,
+				"BuyerSex": "男",
+				"BuyerBirthday": "1980-12-18T00:00:00+08:00",
+				"PrimaryContact": "是"
+			}
+		],
+		"Taxes": 446284.4,  //
+		"TaxRate": 9,  //
+		"InsideArea": 250.96,  //
+		"PostalAddress": "苏州相城区望亭镇宅基浜路2号",
+		"ProjectAddress": "江苏省苏州市吴中区度假区外塘路东",
+		"ProjectCompanyName": "苏州湖铭置业有限公司",
+		"PresaleLicenseNumber": "苏房预吴中（2019）241号",
+		"DocumentNo": "422130198012184514",
+		"DocumentType": "身份证",
+		"InsideTransactionUnitPrice": 21537.3,
+		"InsideTransactionTotalPrice": 5405000,
+		"ValuationMethod": "按套",
+		"RoomStructure": null,
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2020-01-12T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "202001020067",
+		"Apartment": null,
+		"Scenery": null,
+		"Orientation": "",
+		"CustomerGender": "男",
+		"BasementArea": null,
+		"BasementLightingWellDirection": "",
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": null,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": null,
+		"QYSJ": "2020-01-12T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 5405000,
+		"MPHYT": "7幢103",
+		"FQFK": null,
+		"SFFQFK": [    //
+			{
+				"SFFQQC": 1,
+				"SFFQQX": "2020-01-12T00:00:00+08:00",
+				"SFFQJE": 540500,
+				"YJJKSJ": null
+			},
+			{
+				"SFFQQC": 2,
+				"SFFQQX": "2020-03-12T00:00:00+08:00",
+				"SFFQJE": 2164500,
+				"YJJKSJ": null
+			}
+		],
+		"DKXX": "商业贷款", //
+		"NetContractNumber": "202001020067",
+		"ZXPaymentMethod": "",
+		"AJZXKJE": "0.00",
+		"ZXKSQJE": "0.00",
+		"ZXDJ": "0.00",
+		"CG": "0.0000",
+		"ZXDownPaymentRatio": null,
+		"ZXFQFK": null,
+		"ZXSFFQFK": null,
+		"ZHTDJ": "0.0000",
+		"ZHTZJ": "0.0000",
+		"TDSYNX": "0",
+		"DSCS": "3", //
+		"DXCS": "1",  //
+		"ZK": "100.00%", //
+		"BZZJ": "5405000.00", //
+		"SCOutsideArea": 0,
+		"SCInsideArea": 0,
+		"SCPoolArea": 0,
+		"HZZJ": 5405000 //
+	}
+}

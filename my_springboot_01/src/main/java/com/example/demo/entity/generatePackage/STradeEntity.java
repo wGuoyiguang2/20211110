@@ -1,0 +1,866 @@
+package com.example.demo.entity.generatePackage;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class STradeEntity implements Serializable {
+    /**
+     * 主键
+    * id
+     */
+    private Long id;
+
+    /**
+     * 创建时间
+    * CreatedTime
+     */
+    private Date createdtime;
+
+    /**
+     * 创建人GUID
+    * CreatedGUID
+     */
+    private String createdguid;
+
+    /**
+     * 创建人名称
+    * CreatedName
+     */
+    private String createdname;
+
+    /**
+     * 修改时间
+    * ModifiedTime
+     */
+    private Date modifiedtime;
+
+    /**
+     * 修改人GUID
+    * ModifiedGUID
+     */
+    private String modifiedguid;
+
+    /**
+     * 修改人名称
+    * ModifiedName
+     */
+    private String modifiedname;
+
+    /**
+     * 房间GUID
+    * RoomGUID
+     */
+    private String roomguid;
+
+    /**
+     * 公司GUID
+    * BUGUID
+     */
+    private String buguid;
+
+    /**
+     * 项目GUID
+    * ProjGUID
+     */
+    private String projguid;
+
+    /**
+     * 房间状态
+    * RoomStatus
+     */
+    private String roomstatus;
+
+    /**
+     * 房间状态枚举值
+    * RoomStatusEnum
+     */
+    private Integer roomstatusenum;
+
+    /**
+     * 交易状态
+    * TradeStatus
+     */
+    private String tradestatus;
+
+    /**
+     * 交易状态枚举值
+    * TradeStatusEnum
+     */
+    private Integer tradestatusenum;
+
+    /**
+     * 关闭原因
+    * CloseReason
+     */
+    private String closereason;
+
+    /**
+     * 关闭原因枚举值
+    * CloseReasonEnum
+     */
+    private Integer closereasonenum;
+
+    /**
+     * 最后小订GUID
+    * XDOrderGUID
+     */
+    private String xdorderguid;
+
+    /**
+     * 最后认购GUID
+    * RGOrderGUID
+     */
+    private String rgorderguid;
+
+    /**
+     * 最后认购类型
+    * RGOrderType
+     */
+    private String rgordertype;
+
+    /**
+     * 最后认购类型枚举
+    * RGOrderTypeEnum
+     */
+    private Integer rgordertypeenum;
+
+    /**
+     * 最后认购日期
+    * RGOrderQsDate
+     */
+    private Date rgorderqsdate;
+
+    /**
+     * 最后认购业务归属日期
+    * RGOrderYwgsDate
+     */
+    private Date rgorderywgsdate;
+
+    /**
+     * 最后合同GUID
+    * ContractGUID
+     */
+    private String contractguid;
+
+    /**
+     * 最后合同类型
+    * ContractType
+     */
+    private String contracttype;
+
+    /**
+     * 最后合同类型枚举
+    * ContractTypeEnum
+     */
+    private Integer contracttypeenum;
+
+    /**
+     * 最后合同签署日期
+    * ContractQsDate
+     */
+    private Date contractqsdate;
+
+    /**
+     * 最后合同业务归属日期
+    * ContractYwgsDate
+     */
+    private Date contractywgsdate;
+
+    /**
+     * 所有买方姓名
+    * BuyerAllNames
+     */
+    private String buyerallnames;
+
+    /**
+     * 结转状态文本
+    * JzStatus
+     */
+    private String jzstatus;
+
+    /**
+     * 结转状态
+    * JzStatusEnum
+     */
+    private Integer jzstatusenum;
+
+    /**
+     * 最初认购GUID
+    * ZcOrderGUID
+     */
+    private String zcorderguid;
+
+    /**
+     * 最初认购日期
+    * ZcOrderDate
+     */
+    private Date zcorderdate;
+
+    /**
+     * 最初签约GUID
+    * ZcContractGUID
+     */
+    private String zccontractguid;
+
+    /**
+     * 最初签约日期
+    * ZcContractDate
+     */
+    private Date zccontractdate;
+
+    /**
+     * 交易表主键
+    * TradeGUID
+     */
+    private String tradeguid;
+
+    /**
+     * 补差未结转
+    * BcJzStatus
+     */
+    private String bcjzstatus;
+
+    /**
+     * 补差未结转
+    * BcJzStatusEnum
+     */
+    private Integer bcjzstatusenum;
+
+    /**
+     * 最近跟进日期
+    * LastGjDate
+     */
+    private Date lastgjdate;
+
+    /**
+     * 所有买方证件号码
+    * BuyerAllCardIds
+     */
+    private String buyerallcardids;
+
+    /**
+     * 按揭资料审核状态
+    * x_AjAuditStatusEnum
+     */
+    private Integer xAjauditstatusenum;
+
+    /**
+     * 补差款款齐日期
+    * x_BckCollectDate
+     */
+    private Date xBckcollectdate;
+
+    /**
+     * 房款款齐日期
+    * x_FkCollectDate
+     */
+    private Date xFkcollectdate;
+
+    /**
+     * 是否历史开票
+    * x_IsHistoryKP
+     */
+    private Integer xIshistorykp;
+
+    /**
+     * 减免金额
+    * x_Jmje
+     */
+    private BigDecimal xJmje;
+
+    /**
+     * qcCode
+    * x_qcCode
+     */
+    private String xQccode;
+
+    /**
+     * 已减免金额
+    * x_YJmje
+     */
+    private BigDecimal xYjmje;
+
+    /**
+     * 主房间销售单
+    * x_MainTradeGUID
+     */
+    private String xMaintradeguid;
+
+    /**
+     * 97折购房神券（核销码）
+    * x_RoomHxCode
+     */
+    private String xRoomhxcode;
+
+    /**
+     * 是否修改过款项列表
+    * x_HasModifyFee
+     */
+    private Integer xHasmodifyfee;
+
+    /**
+     * 增值税交易锁
+    * x_HasZZSLock
+     */
+    private Integer xHaszzslock;
+
+    /**
+     * 增值税销方税号
+    * x_ZZSTaxNo
+     */
+    private String xZzstaxno;
+
+    /**
+     * 是否测试数据
+    * is_testdata
+     */
+    private Integer isTestdata;
+
+    /**
+     * 是否删除
+    * is_deleted
+     */
+    private Integer isDeleted;
+
+    /**
+     * 版本号
+    * versionNumber
+     */
+    private Long versionnumber;
+
+    /**
+     * 收款备注
+    * x_SkMemo
+     */
+    private String xSkmemo;
+
+    /**
+     * 相关主房间
+    * x_RelatedRoom
+     */
+    private String xRelatedroom;
+
+    /**
+     * This field was generated by MyBatis Generator.
+     * This field corresponds to the database table s_trade
+     *
+     * @mbggenerated
+     */
+    private static final long serialVersionUID = 1L;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Date getCreatedtime() {
+        return createdtime;
+    }
+
+    public void setCreatedtime(Date createdtime) {
+        this.createdtime = createdtime;
+    }
+
+    public String getCreatedguid() {
+        return createdguid;
+    }
+
+    public void setCreatedguid(String createdguid) {
+        this.createdguid = createdguid == null ? null : createdguid.trim();
+    }
+
+    public String getCreatedname() {
+        return createdname;
+    }
+
+    public void setCreatedname(String createdname) {
+        this.createdname = createdname == null ? null : createdname.trim();
+    }
+
+    public Date getModifiedtime() {
+        return modifiedtime;
+    }
+
+    public void setModifiedtime(Date modifiedtime) {
+        this.modifiedtime = modifiedtime;
+    }
+
+    public String getModifiedguid() {
+        return modifiedguid;
+    }
+
+    public void setModifiedguid(String modifiedguid) {
+        this.modifiedguid = modifiedguid == null ? null : modifiedguid.trim();
+    }
+
+    public String getModifiedname() {
+        return modifiedname;
+    }
+
+    public void setModifiedname(String modifiedname) {
+        this.modifiedname = modifiedname == null ? null : modifiedname.trim();
+    }
+
+    public String getRoomguid() {
+        return roomguid;
+    }
+
+    public void setRoomguid(String roomguid) {
+        this.roomguid = roomguid == null ? null : roomguid.trim();
+    }
+
+    public String getBuguid() {
+        return buguid;
+    }
+
+    public void setBuguid(String buguid) {
+        this.buguid = buguid == null ? null : buguid.trim();
+    }
+
+    public String getProjguid() {
+        return projguid;
+    }
+
+    public void setProjguid(String projguid) {
+        this.projguid = projguid == null ? null : projguid.trim();
+    }
+
+    public String getRoomstatus() {
+        return roomstatus;
+    }
+
+    public void setRoomstatus(String roomstatus) {
+        this.roomstatus = roomstatus == null ? null : roomstatus.trim();
+    }
+
+    public Integer getRoomstatusenum() {
+        return roomstatusenum;
+    }
+
+    public void setRoomstatusenum(Integer roomstatusenum) {
+        this.roomstatusenum = roomstatusenum;
+    }
+
+    public String getTradestatus() {
+        return tradestatus;
+    }
+
+    public void setTradestatus(String tradestatus) {
+        this.tradestatus = tradestatus == null ? null : tradestatus.trim();
+    }
+
+    public Integer getTradestatusenum() {
+        return tradestatusenum;
+    }
+
+    public void setTradestatusenum(Integer tradestatusenum) {
+        this.tradestatusenum = tradestatusenum;
+    }
+
+    public String getClosereason() {
+        return closereason;
+    }
+
+    public void setClosereason(String closereason) {
+        this.closereason = closereason == null ? null : closereason.trim();
+    }
+
+    public Integer getClosereasonenum() {
+        return closereasonenum;
+    }
+
+    public void setClosereasonenum(Integer closereasonenum) {
+        this.closereasonenum = closereasonenum;
+    }
+
+    public String getXdorderguid() {
+        return xdorderguid;
+    }
+
+    public void setXdorderguid(String xdorderguid) {
+        this.xdorderguid = xdorderguid == null ? null : xdorderguid.trim();
+    }
+
+    public String getRgorderguid() {
+        return rgorderguid;
+    }
+
+    public void setRgorderguid(String rgorderguid) {
+        this.rgorderguid = rgorderguid == null ? null : rgorderguid.trim();
+    }
+
+    public String getRgordertype() {
+        return rgordertype;
+    }
+
+    public void setRgordertype(String rgordertype) {
+        this.rgordertype = rgordertype == null ? null : rgordertype.trim();
+    }
+
+    public Integer getRgordertypeenum() {
+        return rgordertypeenum;
+    }
+
+    public void setRgordertypeenum(Integer rgordertypeenum) {
+        this.rgordertypeenum = rgordertypeenum;
+    }
+
+    public Date getRgorderqsdate() {
+        return rgorderqsdate;
+    }
+
+    public void setRgorderqsdate(Date rgorderqsdate) {
+        this.rgorderqsdate = rgorderqsdate;
+    }
+
+    public Date getRgorderywgsdate() {
+        return rgorderywgsdate;
+    }
+
+    public void setRgorderywgsdate(Date rgorderywgsdate) {
+        this.rgorderywgsdate = rgorderywgsdate;
+    }
+
+    public String getContractguid() {
+        return contractguid;
+    }
+
+    public void setContractguid(String contractguid) {
+        this.contractguid = contractguid == null ? null : contractguid.trim();
+    }
+
+    public String getContracttype() {
+        return contracttype;
+    }
+
+    public void setContracttype(String contracttype) {
+        this.contracttype = contracttype == null ? null : contracttype.trim();
+    }
+
+    public Integer getContracttypeenum() {
+        return contracttypeenum;
+    }
+
+    public void setContracttypeenum(Integer contracttypeenum) {
+        this.contracttypeenum = contracttypeenum;
+    }
+
+    public Date getContractqsdate() {
+        return contractqsdate;
+    }
+
+    public void setContractqsdate(Date contractqsdate) {
+        this.contractqsdate = contractqsdate;
+    }
+
+    public Date getContractywgsdate() {
+        return contractywgsdate;
+    }
+
+    public void setContractywgsdate(Date contractywgsdate) {
+        this.contractywgsdate = contractywgsdate;
+    }
+
+    public String getBuyerallnames() {
+        return buyerallnames;
+    }
+
+    public void setBuyerallnames(String buyerallnames) {
+        this.buyerallnames = buyerallnames == null ? null : buyerallnames.trim();
+    }
+
+    public String getJzstatus() {
+        return jzstatus;
+    }
+
+    public void setJzstatus(String jzstatus) {
+        this.jzstatus = jzstatus == null ? null : jzstatus.trim();
+    }
+
+    public Integer getJzstatusenum() {
+        return jzstatusenum;
+    }
+
+    public void setJzstatusenum(Integer jzstatusenum) {
+        this.jzstatusenum = jzstatusenum;
+    }
+
+    public String getZcorderguid() {
+        return zcorderguid;
+    }
+
+    public void setZcorderguid(String zcorderguid) {
+        this.zcorderguid = zcorderguid == null ? null : zcorderguid.trim();
+    }
+
+    public Date getZcorderdate() {
+        return zcorderdate;
+    }
+
+    public void setZcorderdate(Date zcorderdate) {
+        this.zcorderdate = zcorderdate;
+    }
+
+    public String getZccontractguid() {
+        return zccontractguid;
+    }
+
+    public void setZccontractguid(String zccontractguid) {
+        this.zccontractguid = zccontractguid == null ? null : zccontractguid.trim();
+    }
+
+    public Date getZccontractdate() {
+        return zccontractdate;
+    }
+
+    public void setZccontractdate(Date zccontractdate) {
+        this.zccontractdate = zccontractdate;
+    }
+
+    public String getTradeguid() {
+        return tradeguid;
+    }
+
+    public void setTradeguid(String tradeguid) {
+        this.tradeguid = tradeguid == null ? null : tradeguid.trim();
+    }
+
+    public String getBcjzstatus() {
+        return bcjzstatus;
+    }
+
+    public void setBcjzstatus(String bcjzstatus) {
+        this.bcjzstatus = bcjzstatus == null ? null : bcjzstatus.trim();
+    }
+
+    public Integer getBcjzstatusenum() {
+        return bcjzstatusenum;
+    }
+
+    public void setBcjzstatusenum(Integer bcjzstatusenum) {
+        this.bcjzstatusenum = bcjzstatusenum;
+    }
+
+    public Date getLastgjdate() {
+        return lastgjdate;
+    }
+
+    public void setLastgjdate(Date lastgjdate) {
+        this.lastgjdate = lastgjdate;
+    }
+
+    public String getBuyerallcardids() {
+        return buyerallcardids;
+    }
+
+    public void setBuyerallcardids(String buyerallcardids) {
+        this.buyerallcardids = buyerallcardids == null ? null : buyerallcardids.trim();
+    }
+
+    public Integer getxAjauditstatusenum() {
+        return xAjauditstatusenum;
+    }
+
+    public void setxAjauditstatusenum(Integer xAjauditstatusenum) {
+        this.xAjauditstatusenum = xAjauditstatusenum;
+    }
+
+    public Date getxBckcollectdate() {
+        return xBckcollectdate;
+    }
+
+    public void setxBckcollectdate(Date xBckcollectdate) {
+        this.xBckcollectdate = xBckcollectdate;
+    }
+
+    public Date getxFkcollectdate() {
+        return xFkcollectdate;
+    }
+
+    public void setxFkcollectdate(Date xFkcollectdate) {
+        this.xFkcollectdate = xFkcollectdate;
+    }
+
+    public Integer getxIshistorykp() {
+        return xIshistorykp;
+    }
+
+    public void setxIshistorykp(Integer xIshistorykp) {
+        this.xIshistorykp = xIshistorykp;
+    }
+
+    public BigDecimal getxJmje() {
+        return xJmje;
+    }
+
+    public void setxJmje(BigDecimal xJmje) {
+        this.xJmje = xJmje;
+    }
+
+    public String getxQccode() {
+        return xQccode;
+    }
+
+    public void setxQccode(String xQccode) {
+        this.xQccode = xQccode == null ? null : xQccode.trim();
+    }
+
+    public BigDecimal getxYjmje() {
+        return xYjmje;
+    }
+
+    public void setxYjmje(BigDecimal xYjmje) {
+        this.xYjmje = xYjmje;
+    }
+
+    public String getxMaintradeguid() {
+        return xMaintradeguid;
+    }
+
+    public void setxMaintradeguid(String xMaintradeguid) {
+        this.xMaintradeguid = xMaintradeguid == null ? null : xMaintradeguid.trim();
+    }
+
+    public String getxRoomhxcode() {
+        return xRoomhxcode;
+    }
+
+    public void setxRoomhxcode(String xRoomhxcode) {
+        this.xRoomhxcode = xRoomhxcode == null ? null : xRoomhxcode.trim();
+    }
+
+    public Integer getxHasmodifyfee() {
+        return xHasmodifyfee;
+    }
+
+    public void setxHasmodifyfee(Integer xHasmodifyfee) {
+        this.xHasmodifyfee = xHasmodifyfee;
+    }
+
+    public Integer getxHaszzslock() {
+        return xHaszzslock;
+    }
+
+    public void setxHaszzslock(Integer xHaszzslock) {
+        this.xHaszzslock = xHaszzslock;
+    }
+
+    public String getxZzstaxno() {
+        return xZzstaxno;
+    }
+
+    public void setxZzstaxno(String xZzstaxno) {
+        this.xZzstaxno = xZzstaxno == null ? null : xZzstaxno.trim();
+    }
+
+    public Integer getIsTestdata() {
+        return isTestdata;
+    }
+
+    public void setIsTestdata(Integer isTestdata) {
+        this.isTestdata = isTestdata;
+    }
+
+    public Integer getIsDeleted() {
+        return isDeleted;
+    }
+
+    public void setIsDeleted(Integer isDeleted) {
+        this.isDeleted = isDeleted;
+    }
+
+    public Long getVersionnumber() {
+        return versionnumber;
+    }
+
+    public void setVersionnumber(Long versionnumber) {
+        this.versionnumber = versionnumber;
+    }
+
+    public String getxSkmemo() {
+        return xSkmemo;
+    }
+
+    public void setxSkmemo(String xSkmemo) {
+        this.xSkmemo = xSkmemo == null ? null : xSkmemo.trim();
+    }
+
+    public String getxRelatedroom() {
+        return xRelatedroom;
+    }
+
+    public void setxRelatedroom(String xRelatedroom) {
+        this.xRelatedroom = xRelatedroom == null ? null : xRelatedroom.trim();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", createdtime=").append(createdtime);
+        sb.append(", createdguid=").append(createdguid);
+        sb.append(", createdname=").append(createdname);
+        sb.append(", modifiedtime=").append(modifiedtime);
+        sb.append(", modifiedguid=").append(modifiedguid);
+        sb.append(", modifiedname=").append(modifiedname);
+        sb.append(", roomguid=").append(roomguid);
+        sb.append(", buguid=").append(buguid);
+        sb.append(", projguid=").append(projguid);
+        sb.append(", roomstatus=").append(roomstatus);
+        sb.append(", roomstatusenum=").append(roomstatusenum);
+        sb.append(", tradestatus=").append(tradestatus);
+        sb.append(", tradestatusenum=").append(tradestatusenum);
+        sb.append(", closereason=").append(closereason);
+        sb.append(", closereasonenum=").append(closereasonenum);
+        sb.append(", xdorderguid=").append(xdorderguid);
+        sb.append(", rgorderguid=").append(rgorderguid);
+        sb.append(", rgordertype=").append(rgordertype);
+        sb.append(", rgordertypeenum=").append(rgordertypeenum);
+        sb.append(", rgorderqsdate=").append(rgorderqsdate);
+        sb.append(", rgorderywgsdate=").append(rgorderywgsdate);
+        sb.append(", contractguid=").append(contractguid);
+        sb.append(", contracttype=").append(contracttype);
+        sb.append(", contracttypeenum=").append(contracttypeenum);
+        sb.append(", contractqsdate=").append(contractqsdate);
+        sb.append(", contractywgsdate=").append(contractywgsdate);
+        sb.append(", buyerallnames=").append(buyerallnames);
+        sb.append(", jzstatus=").append(jzstatus);
+        sb.append(", jzstatusenum=").append(jzstatusenum);
+        sb.append(", zcorderguid=").append(zcorderguid);
+        sb.append(", zcorderdate=").append(zcorderdate);
+        sb.append(", zccontractguid=").append(zccontractguid);
+        sb.append(", zccontractdate=").append(zccontractdate);
+        sb.append(", tradeguid=").append(tradeguid);
+        sb.append(", bcjzstatus=").append(bcjzstatus);
+        sb.append(", bcjzstatusenum=").append(bcjzstatusenum);
+        sb.append(", lastgjdate=").append(lastgjdate);
+        sb.append(", buyerallcardids=").append(buyerallcardids);
+        sb.append(", xAjauditstatusenum=").append(xAjauditstatusenum);
+        sb.append(", xBckcollectdate=").append(xBckcollectdate);
+        sb.append(", xFkcollectdate=").append(xFkcollectdate);
+        sb.append(", xIshistorykp=").append(xIshistorykp);
+        sb.append(", xJmje=").append(xJmje);
+        sb.append(", xQccode=").append(xQccode);
+        sb.append(", xYjmje=").append(xYjmje);
+        sb.append(", xMaintradeguid=").append(xMaintradeguid);
+        sb.append(", xRoomhxcode=").append(xRoomhxcode);
+        sb.append(", xHasmodifyfee=").append(xHasmodifyfee);
+        sb.append(", xHaszzslock=").append(xHaszzslock);
+        sb.append(", xZzstaxno=").append(xZzstaxno);
+        sb.append(", isTestdata=").append(isTestdata);
+        sb.append(", isDeleted=").append(isDeleted);
+        sb.append(", versionnumber=").append(versionnumber);
+        sb.append(", xSkmemo=").append(xSkmemo);
+        sb.append(", xRelatedroom=").append(xRelatedroom);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
+    }
+}

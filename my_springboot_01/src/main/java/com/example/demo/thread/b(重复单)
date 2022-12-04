@@ -1,0 +1,28 @@
+SELECT x_s_Refund.x_NCBUName                  AS x_NCBUName,
+    p_Project.ProjName                     AS ProjName,
+    s_Room.RoomInfo                        AS RoomInfo,
+    x_s_Refund.x_CstName                   AS x_CstName,
+    x_s_Refund.x_ItemType                  AS x_ItemType,
+    x_s_Refund.x_ItemName                  AS x_ItemName,
+    x_s_Refund.x_BeforeRmbYe               AS x_BeforeRmbYe,
+    x_s_Refund.x_Amount                    AS x_Amount,
+    x_s_Refund.x_YHNumber                  AS x_YHNumber,
+    x_s_Refund.x_KZName                    AS x_KZName,
+    x_s_Refund.x_PayType                   AS x_PayType,
+    x_s_RefundApply.x_ApplyDate            AS x_ApplyDate,
+    x_s_Refund.x_Reason                    AS x_Reason,
+    x_s_Refund.x_IsMakeUpTheDifference     AS x_IsMakeUpTheDifference,
+    x_s_Refund.x_RiskLevel                 AS x_RiskLevel,
+    x_s_Refund.RefundGUID                  AS RefundGUID,
+    x_s_Refund.x_CbSpBh                    AS x_CbSpBh,
+    x_s_RefundApply.RefundApplyGUID        AS RefundApplyGUID,
+    s_Room.RoomGUID                        AS RoomGUID,
+    p_Project.p_projectId                  AS p_projectId,
+    --        (SELECT dbo.fn_GetMultipleEncryptCardID(x_CardID)) AS CstShowID,
+    (case
+    when x_s_Refund.ModifiedTime = x_s_Refund.CreatedTime
+    then '否'
+    else '是' end)                     AS IsChanged,
+    (CASE
+    WHEN x_s_Refund.ModifiedTime = x_s_Refund.CreatedTime then null
+    else x_s_Refund.ModifiedTime end) AS UpdateDate

@@ -1,0 +1,132 @@
+{
+	"ProjGUID": "757F873D-AF9F-4CD1-E053-7A60A8C02024",
+	"ContractGUID": "7C9457F9-9F28-EA11-80D1-0050568D6591",
+	"Data": {
+		"ProjGUID": "757F873D-AF9F-4CD1-E053-7A60A8C02024",
+		"ContractGUID": "7C9457F9-9F28-EA11-80D1-0050568D6591",
+		"PaymentMethod": "组合贷款（工抵房专用）",
+		"MortgageBank": "中国农业银行新街口支行",
+		"DownPaymentRatio": 31.96, //
+		"DownPaymentAmount": 939588, //
+		"Payables": [  //
+			{
+				"PayablesAmount": 50000,
+				"PayablesDate": "2019-12-27T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "定金",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 889588,
+				"PayablesDate": "2019-12-27T00:00:00+08:00",
+				"PayablesKind": "非贷款类房款",
+				"PayablesName": "工抵房房款",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 1500000,
+				"PayablesDate": "2020-08-31T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "银行按揭",
+				"YJJKSJ": null
+			},
+			{
+				"PayablesAmount": 500000,
+				"PayablesDate": "2020-08-31T00:00:00+08:00",
+				"PayablesKind": "贷款类房款",
+				"PayablesName": "公积金",
+				"YJJKSJ": null
+			}
+		],
+		"RecordName": "天钜府",
+		"ProductMarketingTypes": "住宅-高层",
+		"CustomerAddress": null,
+		"EarnestMoney": 50000,
+		"RoomNumber": "龙西路天钜项目-一期-天钜-1组团-7幢-1单元-503",
+		"PaymentKind": "按揭付款",
+		"MortgageAmount": 1500000,  //
+		"ProvidentFundAmount": 500000, //
+		"PoolArea": 23.14,  //
+		"ContractDeliveryTime": "2021-07-31T00:00:00+08:00",
+		"ContractTotalPrice": 2939588,
+		"ContractTotalPriceNoTaxes": 2696869.72, //
+		"OutsideTransactionUnitPrice": 32680.24,
+		"OutsideTransactionTotalPrice": 2939588,
+		"OutsideArea": 89.95,
+		"CustomerName": "段建华",
+		"CustomerNumber": "15000531547",
+		"StandbyNumber": "",
+		"Buyers": [
+			{
+				"BuyerName": "段建华",
+				"BuyerNumber": "15000531547",
+				"BuyerIdType": "身份证",
+				"BuyerId": "152322198503200510",
+				"BuyerAdress": "建邺区广聚路33号安科A座1405室",
+				"BuyerRatio": 100,
+				"BuyerSex": "男",
+				"BuyerBirthday": "1985-03-20T00:00:00+08:00",
+				"PrimaryContact": "是"
+			}
+		],
+		"Taxes": 242718.28, //
+		"TaxRate": 9,
+		"InsideArea": 66.81, //
+		"PostalAddress": "建邺区广聚路33号安科A座1405室",
+		"ProjectAddress": "雨花台区铁心桥街道龙西路与纵七路交叉口",
+		"ProjectCompanyName": "南京名盛置业有限公司",
+		"PresaleLicenseNumber": "2019100120W",
+		"DocumentNo": "152322198503200510",
+		"DocumentType": "身份证",
+		"InsideTransactionUnitPrice": 43999.22,
+		"InsideTransactionTotalPrice": 2939588, //
+		"ValuationMethod": "按建筑面积", //
+		"RoomStructure": "3室2厅1卫",
+		"DecorationTotalPrice": 0,
+		"SubscriptionDate": "2019-12-27T00:00:00+08:00",
+		"SubscriptionAgreementNumber": "201912271105",
+		"Apartment": "A户型",
+		"Scenery": null,
+		"Orientation": "坐北朝南", //
+		"CustomerGender": "男",
+		"BasementArea": null,
+		"BasementLightingWellDirection": "",
+		"PrivateGarageArea": null,
+		"AtticArea": null,
+		"BalconyArea": null,
+		"RemovableArea": null,
+		"BasementFloorHeight": null,
+		"BasementLightingWellArea": null,
+		"PrivateCarNumber": null,
+		"TerraceArea": null,
+		"EmptyArea": null,
+		"CourtyardArea": null,
+		"QYSJ": "2019-12-27T00:00:00+08:00",
+		"ZXZJ": 0,
+		"FJZJ": 2954588,
+		"MPHYT": "",
+		"FQFK": null,
+		"SFFQFK": null,
+		"DKXX": "组合贷款", //
+		"NetContractNumber": "201912271105",
+		"ZXPaymentMethod": "",
+		"AJZXKJE": "0.00",
+		"ZXKSQJE": "0.00",
+		"ZXDJ": "0.00",
+		"CG": "2.9500", //
+		"ZXDownPaymentRatio": null,
+		"ZXFQFK": null,
+		"ZXSFFQFK": null,
+		"ZHTDJ": "0.0000",
+		"ZHTZJ": "0.0000",
+		"TDSYNX": "0",
+		"DSCS": "32", //
+		"DXCS": "2",  //
+		"ZK": "99.49%", //
+		"BZZJ": "2954588.00",
+		"SCOutsideArea": 0,
+		"SCInsideArea": 0,
+		"SCPoolArea": 0,
+		"HZZJ": 2939588 //
+	}
+}

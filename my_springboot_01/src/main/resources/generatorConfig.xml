@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="MySqlTables" targetRuntime="MyBatis3" defaultModelType="flat" >
+        <!--当我们生成实体类以后，发现默认是没有toString和序列化，但是很多时候需要序列化对象，从而方便在网络上传输-->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <!--生成 toString 的插件-->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+        <!-- 自动生成lombok注解配置和根据数据库注释为实体添加注释, 需要自己编译文件才可以实现,具体见https://www.jianshu.com/p/58ee7e09fc3f -->
+        <!-- 注意这个路径要配置成 自己 插件的 全路径，否则会报  Cannot instantiate object of type ****LombokPlugin  （因为找不到自定义的插件）  -->
+        <plugin type="com.springboot.mybatis.plugin.LombokPlugin" >
+            <property name="hasLombok" value="true"/>
+        </plugin>
+        <!-- 关闭注解信息 -->
+        <!--<commentGenerator>-->
+            <!--<property name="suppressAllComments" value="true" />-->
+            <!--&lt;!&ndash; 将数据库中表的字段描述信息添加到注释 &ndash;&gt;-->
+            <!--<property name="addRemarkComments" value="true"/>-->
+            <!--&lt;!&ndash; 注释里不添加日期 &ndash;&gt;-->
+            <!--<property name="suppressDate" value="true"/>-->
+        <!--</commentGenerator>-->
+
+        <commentGenerator type="com.springboot.mybatis.plugin.CustomMybatisCommentGenerator">
+            <!-- 定义是否生成原生注释，我们这里自定义了，所以选择false -->
+            <property name="suppressAllComments" value="false"/>
+            <!-- This property is used to specify whether MBG will include the generation timestamp in the generated comments -->
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+
+
+        <!-- 自己修改JDBC的路径 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/45_sql?useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true&amp;useSSL=false&amp;serverTimezone=UTC"
+                        userId="root"
+                        password="123456"/>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+            <!--<property name="useInformationSchema" value="true"/>-->
+        </javaTypeResolver>
+
+        <!-- 生成POJO对象，并将类放到com.example.demo.entity.generatePackage包下 -->
+        <javaModelGenerator targetPackage="com.example.demo.entity.generatePackage"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 生成mapper xml文件，并放到resources下的mapper文件夹下 -->
+        <sqlMapGenerator targetPackage="mybatis.mapper"  targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+
+        <!-- 生成的dao类 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.example.demo.mapper"
+                             targetProject="src/main/java/">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 一个用户生成动态查询的条件类（selectByExample, deleteByExample），可选sql模板； -->
+        <!--enableXXX : 代表多种SQL方法，该属性用来指定是否生成对应的XXX语句。-->
+        <!--:如果设置为true,那么MBG会使用从数据库元数据获取的列名作为生成的实体对象的属性。 如果为false(默认值)，MGB将会尝试将返回的名称转换为驼峰形式。-->
+        <!--在这两种情况下，可以通过 元素显示指定，在这种情况下将会忽略这个（useActualColumnNames）属性-->
+        <!--s_PayForm_order_fee_mock s_PayDetail_order_fee_mock-->
+        <table tableName="x_s_isopencontractsignset" domainObjectName="IsOpenContractSignSetEntity"
+               enableInsert="true"
+               enableSelectByPrimaryKey="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true"
+
+               enableUpdateByPrimaryKey="true"
+               enableUpdateByExample="false"
+
+
+               enableDeleteByPrimaryKey="true"
+               enableDeleteByExample="false"
+
+               enableCountByExample="false" >
+
+            <!--value = "false"  eg: roomguid ; x_IsYfYy  xisyfyy -->
+            <!--<property name="useActualColumnNames" value="false"/>-->
+            <!--true 意思是 ①表里的字段 是大驼峰 可以转为小驼峰 ;
+            ②  用 表的列名做 属性值 x_EndDate 字段 在实体类里也是  x_EndDate
+
+            -->
+            <property name="useActualColumnNames" value="true"/>
+            <!-- 如果不加下面的 这一列, 即使开启了小驼峰命名 ,x_EndDate 字段实体类里 还是 x_EndDate -->
+            <!--下划线命名的处理-->
+            <columnRenamingRule searchString="^x_" replaceString="x"/>
+
+            <!--
+            该元素会在根据表中列名计算对象属性名之前先重命名列名，非常适合用于表中的列都有公用的前缀字符串的时候， 比如列名为：CUST_ID,CUST_NAME,CUST_EMAIL,CUST_ADDRESS等；
+            那么就可以设置searchString为"^CUST_"，并使用空白替换，那么生成的Customer对象中的属性名称就不是 custId,custName等，而是先被替换为ID,NAME,EMAIL,然后变成属性：id，name，email；
+            注意，MBG是使用java.util.regex.Matcher.replaceAll来替换searchString和replaceString的，
+            如果使用了columnOverride元素，该属性无效；
+        <columnRenamingRule searchString="" replaceString=""/>
+         -->
+
+            <!--<columnOverride column="username">-->
+                <!--&lt;!&ndash; 使用property属性来指定列要生成的属性名称 &ndash;&gt;-->
+                <!--<property name="property" value="userName"/>-->
+            <!--</columnOverride>-->
+            <!--<columnOverride column="username">-->
+                <!--&lt;!&ndash; 使用property属性来指定列要生成的属性名称 &ndash;&gt;-->
+                <!--<property name="property" value="userName"/>-->
+            <!--</columnOverride>-->
+            <!--&lt;!&ndash;  <columnOverride column="username">-->
+                <!--&lt;!&ndash; 使用property属性来指定列要生成的属性名称 &ndash;&gt;-->
+                <!--<property name="property" value="userName"/> &ndash;&gt;-->
+            <!--</columnOverride>-->
+
+
+        </table>
+
+    </context>
+</generatorConfiguration>
+

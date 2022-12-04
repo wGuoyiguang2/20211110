@@ -1,0 +1,23 @@
+
+8
+java:S3626~"Remove this redundant jump.(ûÁİ…8¸à„…/
+X	java:S125q"<This block of commented-out lines of code should be removed.(¨¼õ²8¸à„…/
+
+java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­îÆÂ8¸à„…/
+K
+java:S1068".Remove this unused "properties" private field.(õ÷Şà8¸à„…/
+R
+java:S1068"0Remove this unused "suppressDate" private field.(Áäİ°ùÿÿÿÿ8¸à„…/
+X	java:S125j"<This block of commented-out lines of code should be removed.( âÙã8¸à„…/
+Y	java:S125‚"<This block of commented-out lines of code should be removed.(ıöä8¸à„…/
+X	java:S125'"<This block of commented-out lines of code should be removed.(ğº™À8¸à„…/
+]	java:S125s"<This block of commented-out lines of code should be removed.(á²…Éüÿÿÿÿ8¸à„…/
+^	java:S125’"<This block of commented-out lines of code should be removed.(á²…Éüÿÿÿÿ8¸à„…/
+X	java:S125c"<This block of commented-out lines of code should be removed.(ıöä8¸à„…/
+Y	java:S125ˆ"<This block of commented-out lines of code should be removed.(ïÏ¸±8¸à„…/
+X	java:S125e"<This block of commented-out lines of code should be removed.(´üô×8¸à„…/
+8
+java:S3626U"Remove this redundant jump.(ûÁİ…8¸à„…/
+Y	java:S125"<This block of commented-out lines of code should be removed.(¨¼õ²8¸à„…/
+8
+java:S3626`"Remove this redundant jump.(ûÁİ…8¸à„…/
